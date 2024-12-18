@@ -103,7 +103,7 @@ export default function Portfoliocard({ image, title, description, link }) {
               Tools System Information
             </h1>
             {/* Looping untuk menampilkan setiap tool */}
-            <div className="flex flex-row w-[28rem] h-[5rem] ml-4 overflow-x-auto overflow-hidden">
+            <div className="flex flex-row md:w-[28rem] w-[17rem] h-[5rem] ml-4 overflow-x-auto overflow-hidden">
               {tools.map((tool) => (
                 <div key={tool.id} className="w-full">
                   <div
