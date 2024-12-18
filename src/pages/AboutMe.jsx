@@ -221,7 +221,7 @@ export default function AboutMe() {
       {/* Content Section */}
       <div className="flex flex-col items-center md:flex-row md:items-start mt-8 gap-12">
         {/* Profile Image */}
-        <div className="w-[18rem] h-[18rem] md:w-[28rem] md:h-[28rem] rounded-full overflow-hidden shadow-lg shadow-[#B7B7B7]">
+        <div className="w-[18rem] h-[18rem] md:w-[26rem] md:h-[26rem] rounded-full overflow-hidden shadow-lg shadow-[#B7B7B7]">
           <img
             className="w-full h-full object-cover"
             src={Jercarlo}
@@ -230,7 +230,7 @@ export default function AboutMe() {
         </div>
         {/* Text Section */}
         <div className="text-justify md:text-justify overflow-y-auto px-6 md:px-0">
-          <p className="text-[1rem] md:text-[1.4rem] md:w-[54rem] leading-relaxed mb-6">
+          <p className="text-[1rem] md:text-[1.2rem] md:w-[45rem] leading-relaxed mb-6">
             Fresh graduate with a bachelor's degree in Software Engineering from
             the Faculty of Informatics at Telkom University. I have a strong
             interest and passion for Frontend Web Development. I have
@@ -243,7 +243,7 @@ export default function AboutMe() {
             Web Development, and I enjoy exploring and learning new things in
             this field.
           </p>
-          <p className="text-[1rem] md:text-[1.4rem] md:w-[54rem] leading-relaxed">
+          <p className="text-[1rem] md:text-[1.2rem] md:w-[45rem] leading-relaxed">
             I also have an interest in the cybersecurity sector. Currently, I am
             pursuing the CEH (Certified Ethical Hacker) certification at
             Course.Net. With a strong enthusiasm for learning, I am confident in
