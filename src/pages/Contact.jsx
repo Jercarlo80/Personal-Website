@@ -53,7 +53,7 @@ export default function Contact() {
           rounded-xl shadow-[#950101] shadow-lg drop-shadow-sm mt-[4rem] flex flex-col justify-center"
         >
           {/* Social Media Buttons */}
-          <div className="grid grid-cols-2 justify-center items-center md:mt-0 mt-18 md:p-[8rem] p-[2.5rem] gap-8">
+          <div className="grid grid-cols-2 justify-center items-center md:mt-0 mt-18 md:p-[8rem] p-[2.55rem] gap-8">
             {socialMedia.map((social, index) => (
               <a
                 key={index}
