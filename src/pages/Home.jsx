@@ -36,7 +36,11 @@ export default function Home() {
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
               className="bg-gradient-to-r from-[#FF0000] to-[#950101] text-transparent bg-clip-text font-extrabold"
             >
               {text}
@@ -46,22 +50,25 @@ export default function Home() {
             Jeremia Carlo Christianto S
           </h1>
           <motion.button
-          
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="
-          flex flex-row justify-center items-center gap-x-3 w-[12rem] sm:w-[14rem]
-          h-[3rem] mx-auto sm:mx-0 bg-gradient-to-r from-[#FF0000] to-[#950101] rounded-full
-          [box-shadow:0_10px_0_#FF0000] active:translate-y-[5px] active:[box-shadow:0_5px_0_#FF0000]"
+            flex flex-row justify-center items-center gap-x-3 w-[12rem] sm:w-[14rem]
+            h-[3rem] mx-auto sm:mx-0 bg-gradient-to-r from-[#FF0000] to-[#950101] rounded-full
+            shadow-[0_10px_0_#FF0000] active:translate-y-[5px] active:shadow-[0_5px_0_#FF0000]
+            text-white font-semibold text-[1.2rem]"
           >
-            <h1 className="font-semibold text-white text-[1.2rem]">
+            <a
+              href="https://drive.google.com/drive/folders/1_qyYKLB-I-7vhpDSwevo0IU3tsrZeTQJ?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center gap-x-2"
+            >
               Download CV
-            </h1>
-            <FaFileDownload
-              size={25}
-              className="text-white animate-bounce"
-            />
+              <FaFileDownload size={20} className="animate-bounce" />
+            </a>
           </motion.button>
         </motion.div>
-
         {/* Image Section */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

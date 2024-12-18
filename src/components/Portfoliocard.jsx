@@ -3,6 +3,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiPrivateinternetaccess } from "react-icons/si";
 
 export default function Portfoliocard({ image, title, description, link }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Portfoliocard({ image, title, description, link }) {
   return (
     <div
       className="
-      w-[20rem] sm:w-[24rem] md:w-[32rem] h-[30rem] sm:h-[30rem] md:h-[42rem] 
+      w-[20rem] sm:w-[24rem] md:w-[32rem] h-[32rem] sm:h-[30rem] md:h-[42rem] 
       rounded-xl shadow-[#950101] shadow-lg drop-shadow-sm"
     >
       <div className="w-full h-full flex flex-col p-2 sm:p-2">
@@ -45,7 +46,7 @@ export default function Portfoliocard({ image, title, description, link }) {
         />
         {/* Content Section */}
         <div className="flex flex-col w-full h-full mt-4 gap-y-2 sm:gap-y-3 px-2 sm:px-4">
-          <h1 className="font-semibold text-[1.4rem] sm:text-[1.8rem] md:text-[2rem]">
+          <h1 className="font-semibold text-[1.2rem] sm:text-[1.8rem] md:text-[2rem]">
             {title}
           </h1>
           <div className="h-[9rem] sm:h-[9rem] md:h-[16rem] overflow-y-scroll">
@@ -66,17 +67,30 @@ export default function Portfoliocard({ image, title, description, link }) {
             </button>
 
             {/* GitHub Button */}
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-              flex flex-row justify-center items-center gap-x-3 w-[5rem] sm:w-[5rem]
-              h-[3rem] mx-auto sm:mx-0 bg-gradient-to-r from-[#FF0000] to-[#950101] rounded-full
-              [box-shadow:0_10px_0_#FF0000] active:translate-y-[5px] active:[box-shadow:0_5px_0_#FF0000]"
-            >
-              <IoLogoGithub size={32} />
-            </a>
+            {link ? (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                flex flex-row justify-center items-center gap-x-3 w-[5rem] sm:w-[5rem]
+                h-[3rem] mx-auto sm:mx-0 bg-gradient-to-r from-[#FF0000] to-[#950101] rounded-full
+                [box-shadow:0_10px_0_#FF0000] active:translate-y-[5px] active:[box-shadow:0_5px_0_#FF0000]"
+              >
+                <IoLogoGithub size={32} />
+              </a>
+            ) : (
+              <div
+                className="
+                flex flex-row justify-center items-center gap-x-3 w-[5rem] sm:w-[5rem]
+                h-[3rem] mx-auto sm:mx-0 bg-gradient-to-r from-[#FF0000] to-[#950101] rounded-full
+                [box-shadow:0_10px_0_#FF0000] active:translate-y-[5px] active:[box-shadow:0_5px_0_#FF0000]"
+              >
+                <span className="text-white">
+                  <SiPrivateinternetaccess size={40} />
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -89,11 +103,11 @@ export default function Portfoliocard({ image, title, description, link }) {
               Tools System Information
             </h1>
             {/* Looping untuk menampilkan setiap tool */}
-            <div className="flex flex-row w-[28rem] h-[5rem] ml-4 mr-4 overflow-x-auto overflow-hidden">
+            <div className="flex flex-row w-[28rem] h-[5rem] ml-4 overflow-x-auto overflow-hidden">
               {tools.map((tool) => (
                 <div key={tool.id} className="w-full">
                   <div
-                    className="flex flex-row justify-center items-center w-[9rem] h-[3.5rem] shadow-lg ml-4 mr-6 rounded-2xl"
+                    className="flex flex-row justify-center items-center w-[9rem] h-[3.5rem] shadow-lg ml-4 rounded-2xl"
                     style={{ backgroundColor: tool.color }}
                   >
                     {tool.icon}
