@@ -47,7 +47,7 @@ export default function Home() {
             </motion.span>
           </h2>
           <h1 className="text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] font-bold">
-            Jeremia Carlo Christianto S
+            Jeremia Carlo CS
           </h1>
           <motion.button
             whileHover={{ scale: 1.05 }}

@@ -49,17 +49,11 @@ export default function Contact() {
       <div className="w-full h-full flex justify-center items-center mb-8">
         <div
           className="
-          w-[20rem] sm:w-[24rem] md:w-[30rem] h-[30rem] sm:h-[30rem] md:h-[30rem] 
+          w-[20rem] sm:w-[24rem] md:w-[30rem] h-[24rem] sm:h-[30rem] md:h-[30rem] 
           rounded-xl shadow-[#950101] shadow-lg drop-shadow-sm mt-[4rem] flex flex-col justify-center"
         >
-          <div className="w-full h-full flex justify-center absolute bottom-8">
-            <img
-              className="w-[10rem] h-[10rem] shadow-[#950101] shadow-lg drop-shadow-sm rounded-full"
-              src={Jercarlo}
-            />
-          </div>
           {/* Social Media Buttons */}
-          <div className="grid grid-cols-2 justify-center items-center md:mt-0 mt-24 md:p-[8rem] p-[2.5rem] gap-8">
+          <div className="grid grid-cols-2 justify-center items-center md:mt-0 mt-18 md:p-[8rem] p-[2.5rem] gap-8">
             {socialMedia.map((social, index) => (
               <a
                 key={index}
