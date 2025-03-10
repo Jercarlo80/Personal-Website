@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Jercarlo from "../assets/aboutme/Jercarlo.png";
 import { FaInstagram, FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
 
 export default function Contact() {
