@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Tabs ({ tabs }) {
-  const [activeTab, setActiveTab] = useState(0); // Track the active tab index
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="md:w-full w-[75%] h-screen max-w-[70rem] mt-4">

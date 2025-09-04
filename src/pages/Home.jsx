@@ -3,6 +3,7 @@ import { useTypewriter } from "react-simple-typewriter";
 import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import HomeImage from "../assets/home/HomeImage.jpg";
+import ChatBot from "../components/ChatBot";
 
 export default function Home() {
   const [text] = useTypewriter({
@@ -59,7 +60,7 @@ export default function Home() {
             text-white font-semibold text-[1.2rem]"
           >
             <a
-              href="https://drive.google.com/drive/folders/1_qyYKLB-I-7vhpDSwevo0IU3tsrZeTQJ?usp=sharing"
+              href="https://drive.google.com/drive/folders/17y_PIHIJY_ZKyBHEoOdD5Ssj0r26GFx3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center gap-x-2"
@@ -95,6 +96,7 @@ export default function Home() {
           />
         </motion.div>
       </motion.div>
+      <ChatBot />
     </div>
   );
 }
