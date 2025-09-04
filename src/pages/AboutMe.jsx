@@ -96,7 +96,7 @@ export default function AboutMe() {
       image: BTP,
       role: "Front End Developer",
       company: "Bandung Techno Park",
-      status: "Full Time",
+      status: "Internship",
       time: "Jan 2024 - Dec 2024 | 1 yr",
       location: "Bandung, West Java, Indonesia | On-site",
     },
